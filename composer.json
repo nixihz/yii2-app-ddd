@@ -1,0 +1,61 @@
+{
+    "name": "yiisoft/yii2-app-ddd",
+    "description": "Yii 2 ddd Project Template",
+    "keywords": [
+        "yii2",
+        "framework",
+        "ddd",
+        "project template"
+    ],
+    "homepage": "https://www.yiiframework.com/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+        "forum": "https://www.yiiframework.com/forum/",
+        "wiki": "https://www.yiiframework.com/wiki/",
+        "irc": "irc://irc.freenode.net/yii",
+        "source": "https://github.com/yiisoft/yii2"
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=8.0",
+        "yiisoft/yii2": "~2.0.14",
+        "yiisoft/yii2-bootstrap4": "~2.0.0",
+        "netresearch/jsonmapper": "^4.0",
+        "yiisoft/yii2-queue": "^2.3",
+        "yiisoft/event-dispatcher": "^1.0",
+        "vlucas/phpdotenv": "^5.4",
+        "nesbot/carbon": "^2.55",
+        "yiisoft/yii2-redis": "^2.0",
+        "s9e/text-formatter": "^2.11",
+        "guzzlehttp/guzzle": "^7.4",
+        "league/flysystem": "^3.0"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "~2.1.0",
+        "yiisoft/yii2-gii": "^2.2",
+        "codeception/module-yii2": "^1.1"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        },
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "internal\\": "internal/",
+            "app\\": "app/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
