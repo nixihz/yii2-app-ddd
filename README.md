@@ -111,7 +111,7 @@ DDD
 │   ├── controllers
 │   └── migrations
 ├── internal
-│   ├── application // 应用层
+│   ├── application // application
 │   │   ├── job
 │   │   └── service
 │   ├── base
@@ -122,7 +122,7 @@ DDD
 │   ├── components
 │   │   └── EventListener.php
 │   ├── constants
-│   ├── domain // 领域层
+│   ├── domain // domain
 │   │   ├── category
 │   │   ├── thread
 │   │   └── user
