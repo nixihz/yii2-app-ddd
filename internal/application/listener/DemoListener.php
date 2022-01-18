@@ -3,28 +3,19 @@
 namespace internal\application\listener;
 
 
-use internal\domain\thread\event\PassedEvent;
+use internal\application\job\DemoJob;
+use internal\domain\demo\event\DemoCreatedEvent;
 use Yii;
 
 class DemoListener
 {
 
-    public static function whenPostPassed(PassedEvent $event)
+    public static function whenDemoCreated(DemoCreatedEvent $event)
     {
-        $job = new PostPassedJob();
-        $job->postId = $event->post->id;
+        $job = new DemoJob();
+        $job->demoId = $event->demo->id;
 
         Yii::$app->queue->push($job);
     }
-
-    public static function whenPostDenied(DeniedEvent $event)
-    {
-        $job = new PostDeniedJob();
-        $job->postId = $event->post->id;
-        $job->remark = $event->remark;
-
-        Yii::$app->queue->push($job);
-    }
-
 
 }

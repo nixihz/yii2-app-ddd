@@ -8,7 +8,7 @@ use yii\queue\JobInterface;
 class DemoJob extends BaseObject implements JobInterface
 {
 
-    public $params;
+    public $demoId;
 
     public function execute($queue)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace internal\domain\thread\event;
+namespace internal\domain\demo\event;
 
 interface EventInterface
 {
