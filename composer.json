@@ -19,7 +19,7 @@
     },
     "minimum-stability": "stable",
     "require": {
-        "php": ">=8.0",
+        "php": ">=8.1",
         "yiisoft/yii2": "~2.0.14",
         "yiisoft/yii2-bootstrap4": "~2.0.0",
         "netresearch/jsonmapper": "^4.0",
@@ -29,13 +29,14 @@
         "nesbot/carbon": "^2.55",
         "yiisoft/yii2-redis": "^2.0",
         "s9e/text-formatter": "^2.11",
-        "guzzlehttp/guzzle": "^7.4",
         "league/flysystem": "^3.0"
     },
     "require-dev": {
-        "yiisoft/yii2-debug": "~2.1.0",
+        "yiisoft/yii2-debug": "^2.1",
         "yiisoft/yii2-gii": "^2.2",
-        "codeception/module-yii2": "^1.1"
+        "codeception/module-yii2": "^1.1",
+        "codeception/module-phpbrowser": "^2.0",
+        "codeception/module-asserts": "^2.0"
     },
     "config": {
         "process-timeout": 1800,

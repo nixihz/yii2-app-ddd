@@ -1,0 +1,24 @@
+namespace: internal\tests
+paths:
+    tests: tests
+    output: tests/_output
+    support: tests/_support
+    data: tests
+suites:
+    unit:
+        path: .
+        actor: UnitTester
+        step_decorators: ~
+settings:
+    shuffle: true
+    lint: true
+bootstrap: ../../config/codeception-bootstrap.php
+coverage:
+    enabled: false # code coverage enabled false
+    include:
+        - ./*
+modules:
+    enabled:
+        - Asserts
+        - Yii2:
+              configFile: '../config/codeception.php'
